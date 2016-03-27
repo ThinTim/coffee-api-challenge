@@ -8,7 +8,7 @@ require_relative '../app.rb'
 
 module RackMixin
   include Rack::Test::Methods
-  def app() Sinatra::Application end
+  def app() App end
 end
 
 RSpec.configure do |c|

@@ -10,6 +10,7 @@ gem 'pacto-server', '= 0.4.0.rc1'
 gem 'httpclient'
 gem 'json'
 gem 'sinatra'
+gem 'sinatra-contrib'
 gem 'sqlite3'
 gem 'sequel'
 
