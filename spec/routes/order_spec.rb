@@ -5,7 +5,7 @@ require_relative '../../models/coffee'
 require_relative '../../models/order'
 
 describe 'POST /order/:coffee_id' do
-  before(:all) do
+  before(:each) do
     DB[:coffees].insert(id: "latte", name: "latte", price: 3.5, caffeine_level: 5, milk_ratio: 3, brewing_time: 30)
   end
 
@@ -53,7 +53,7 @@ describe 'POST /order/:coffee_id' do
 end
 
 describe 'GET /order/:order_id' do
-  before(:all) do
+  before(:each) do
     DB[:coffees].insert(id: "latte", name: "latte", price: 3.5, caffeine_level: 5, milk_ratio: 3, brewing_time: 30)
     DB[:orders].insert(coffee_id: 'latte', size: 'small', extras_list: '[]', pickup_time: Time.now + 60)
   end

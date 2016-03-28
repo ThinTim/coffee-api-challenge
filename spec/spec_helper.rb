@@ -18,11 +18,6 @@ RSpec.configure do |c|
 
   c.color = true
 
-  c.before(:all) do
-    Sequel::Migrator.run(DB, 'migrations', target: 0)
-    Sequel::Migrator.run(DB, 'migrations')
-  end
-
   c.around(:each) do |example|
     DB.transaction(:rollback=>:always, :auto_savepoint=>true) { example.run }
   end
