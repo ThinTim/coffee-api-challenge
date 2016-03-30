@@ -1,6 +1,8 @@
 require 'rack/parser'
 require 'json'
 
+ENV['RACK_ENV'] ||= 'development'
+
 require './db'
 require './app'
 
