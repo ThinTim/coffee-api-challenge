@@ -14,6 +14,6 @@ describe 'GET /menu' do
 
     result = JSON.parse(last_response.body)
 
-    expect(result[:coffees]).to be_a(Array)
+    expect(result['coffees']).to be_a(Array)
   end
 end

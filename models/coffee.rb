@@ -1,4 +1,6 @@
 require 'sequel'
 
-class Coffee < Sequel::Model
+module Models
+  class Coffee < Sequel::Model
+  end
 end

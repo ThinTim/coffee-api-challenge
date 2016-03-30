@@ -13,6 +13,7 @@ gem 'httpclient'
 gem 'json'
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'rack-parser'
 gem 'sqlite3'
 gem 'sequel'
 

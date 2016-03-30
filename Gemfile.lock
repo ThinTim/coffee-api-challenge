@@ -75,6 +75,8 @@ GEM
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
       rack (~> 1.4)
+    rack-parser (0.6.1)
+      rack
     rack-protection (1.5.3)
       rack
     rack-respond_to (0.9.8)
@@ -129,6 +131,7 @@ DEPENDENCIES
   json-schema (~> 2.2.3)
   pacto (= 0.4.0.rc1)
   pacto-server (= 0.4.0.rc1)
+  rack-parser
   rack-test
   rake
   rspec
