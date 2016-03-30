@@ -12,6 +12,7 @@ RSpec::Core::RakeTask.new(:rspec)
 desc 'Run rspec tests'
 task 'spec' do
   system 'RACK_ENV=test rake db:reset'
+  sleep 1 #Sometimes the migrations don't finish before the specs run
   system 'RACK_ENV=test rake rspec'
 end
 

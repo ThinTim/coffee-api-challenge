@@ -10,8 +10,6 @@ Sequel.migration do
   down do
     alter_table(:orders) do
       drop_foreign_key :coffee_id
-      add_foreign_key :coffee_id, :coffees
-      set_column_not_null :coffee_id
     end
   end
 end
